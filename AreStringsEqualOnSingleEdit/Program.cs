@@ -18,34 +18,26 @@ namespace AreStringsEqualOnSingleEdit
             Console.ReadLine();
         }
 
-        private static bool AreStringsEqualOnSingleEdit(string string_1, string string_2)
+        private static bool AreStringsEqualOnSingleEdit(string s1, string s2)
         {
-            if (string.IsNullOrEmpty(string_1) || string.IsNullOrEmpty(string_2)
-                || (string_1.Length - string_2.Length) < -1 || (string_1.Length - string_2.Length) > 1)
+            if (string.IsNullOrEmpty(s1) || string.IsNullOrEmpty(s2)
+                || (s1.Length - s2.Length) < -1 || (s1.Length - s2.Length) > 1)
                 return false;
 
             int DiffCount = 0;
-            int str_1_Ptr = 0, str_2_Ptr = 0;
-            while (DiffCount < 2 && str_1_Ptr < string_1.Length && str_2_Ptr < string_2.Length)
+            int s1Ptr = 0, s2Ptr = 0;
+            for (; DiffCount < 2 && s1Ptr < s1.Length && s2Ptr < s2.Length; s1Ptr++, s2Ptr++)
             {
-                if (string_1[str_1_Ptr] == string_2[str_2_Ptr])
-                {
-                    str_1_Ptr++;
-                    str_2_Ptr++;
-                }
-                else if (string_1.Length == string_2.Length)
+                if (s1[s1Ptr] != s2[s2Ptr])
                 {
                     DiffCount++;
-                    str_1_Ptr++;
-                    str_2_Ptr++;
-                }
-                else
-                {
-                    DiffCount++;
-                    int _ = string_1.Length > string_2.Length ? str_1_Ptr++ : str_2_Ptr++;
+                    if(s1.Length != s2.Length)
+                    {
+                        int _ = s1.Length < s2.Length ? s1Ptr-- : s2Ptr--;
+                    }
                 }
             }
-            if (str_1_Ptr + 1 == string_1.Length || str_2_Ptr + 1 == string_2.Length)
+            if (s1Ptr + 1 == s1.Length || s2Ptr + 1 == s2.Length)
             {
                 DiffCount++;
             }
