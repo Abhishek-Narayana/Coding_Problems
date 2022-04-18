@@ -9,7 +9,7 @@ namespace MaxWaterContainerCanHold
         {
             // https://www.interviewbit.com/problems/container-with-most-water/
             Program program = new Program();
-            List<int> container = new List<int>(){ 1, 3, 7, 2, 7, 3, 1 };
+            List<int> container = new List<int>(){ 1, 20, 20, 1 };
             Console.WriteLine(program.maxArea(container));
             Console.ReadLine();
         }
@@ -22,24 +22,15 @@ namespace MaxWaterContainerCanHold
                 return Math.Min(container[0], container[1]);
 
             int start = 0, end = container.Count - 1;
-            int maxWater = Math.Min(container[start], container[end]) * (end - start);
-            while ((end - start) != 1)
+            int maxWater = 0;
+            while (start < end)
             {
-                if (TryIncreasingCapacity(container, start + 1, end, ref maxWater))
-                    start++;
-                if (TryIncreasingCapacity(container, start, end - 1, ref maxWater))
-                    end--;
+                int result = Math.Min(container[start], container[end]) * (end - start);
+                if (result > maxWater)
+                    maxWater = result;
                 int _ = container[start] < container[end] ? start++ : end--;
             }
             return maxWater;
-        }
-
-        private static bool TryIncreasingCapacity(List<int> container, int start, int end, ref int curMax)
-        {
-            int result = Math.Min(container[start], container[end]) * (end - start);
-            if (result > curMax)
-                curMax = result;
-            return result > curMax;
         }
     }
 }
