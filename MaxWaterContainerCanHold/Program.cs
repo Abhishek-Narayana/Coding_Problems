@@ -21,8 +21,7 @@ namespace MaxWaterContainerCanHold
             else if (container.Count == 2)
                 return Math.Min(container[0], container[1]);
 
-            int start = 0, end = container.Count - 1;
-            int maxWater = 0;
+            int start = 0, end = container.Count - 1, maxWater = 0;
             while (start < end)
             {
                 int result = Math.Min(container[start], container[end]) * (end - start);
