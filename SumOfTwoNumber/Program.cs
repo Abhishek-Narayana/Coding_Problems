@@ -17,8 +17,6 @@ namespace SumOfTwoNumber
         private static int[] ReturnNumAddUpToSum(int[] nums, int target)
         {
             Hashtable visitedNums = new Hashtable();
-            // Dictionary<int, int> visitedNums = new Dictionary<int, int>();
-
             for (int index = 0; index < nums.Length; index++)
             {
                 if (visitedNums.ContainsKey(target - nums[index]))

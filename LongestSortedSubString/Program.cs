@@ -8,10 +8,11 @@ namespace LongestSortedSubString
         static void Main(string[] args)
         {
             string sentence = "abcbcdeabcbcdeabcbcdeabcbcdeabcbcdedabcd";
+            // string sentence = "a b c d e f g h i j k l d";
             Console.WriteLine(LongestSortedSubString(sentence));
 
             Console.ReadLine();
-        }
+       }
 
         private static StringBuilder LongestSortedSubString(string sentence)
         {
