@@ -66,32 +66,32 @@ namespace CheckBinaryAndHexaDecimalNumberEquality
 
         private static Number ConvertToBase(Number number, Base binary)
         {
-            if (String.IsNullOrEmpty(number.number))
-                return null;
-            int temp;
+            //if (String.IsNullOrEmpty(number.number))
+            //    return null;
+            //int temp;
 
-            switch (number.Base)
-            {
-                case Base.Binary:
-                    convertedNumber = ConvertBinaryToBase(number, Base.Binary);
-                    break;
-                case Base.Decimal:
-                    convertedNumber = ConvertToBase(number, Base.Decimal);
-                    break;
-                case Base.Octal:
-                    convertedNumber = ConvertToBase(number, Base.Octal);
-                    break;
-                case Base.Hexa:
-                    convertedNumber = ConvertToBase(number, Base.Hexa);
-                    break;
-                default:
-                    break;
-            }
+            //switch (number.Base)
+            //{
+            //    case Base.Binary:
+            //        convertedNumber = ConvertBinaryToBase(number, Base.Binary);
+            //        break;
+            //    case Base.Decimal:
+            //        convertedNumber = ConvertToBase(number, Base.Decimal);
+            //        break;
+            //    case Base.Octal:
+            //        convertedNumber = ConvertToBase(number, Base.Octal);
+            //        break;
+            //    case Base.Hexa:
+            //        convertedNumber = ConvertToBase(number, Base.Hexa);
+            //        break;
+            //    default:
+            //        break;
+            //}
 
-            for (int count = number.number.Length; count > 0; --count)
-            {
-                temp = number.number[0] / 2;
-            }
+            //for (int count = number.number.Length; count > 0; --count)
+            //{
+            //    temp = number.number[0] / 2;
+            //}
             return null;
         }
     }

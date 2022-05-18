@@ -109,25 +109,25 @@ namespace SingleLinkedList
     {
         static void Main(string[] args)
         {
-            SingleLinkedList list = new SingleLinkedList();
-            Console.WriteLine("Enter linked list data");
-            string listData = Console.ReadLine();
-            foreach (string item in listData.Split(' '))
-            {
-                list.Insert(int.Parse(item));
-            }
+            //SingleLinkedList list = new SingleLinkedList();
+            //Console.WriteLine("Enter linked list data");
+            //string listData = Console.ReadLine();
+            //foreach (string item in listData.Split(' '))
+            //{
+            //    list.Insert(int.Parse(item));
+            //}
 
-            list.Display();
-            Console.WriteLine("\n");
+            //list.Display();
+            //Console.WriteLine("\n");
 
-            LinkedList
+            //LinkedList
 
-            // Input 1, 2, 3, 4, 5, 6, 7, 8
-            // Output 3, 2, 1, 6, 5, 4, 8, 7
-            var listNew = SingleLinkedList.ReverseGroup(list.head, 3);
-            SingleLinkedList.Display(listNew);
+            //// Input 1, 2, 3, 4, 5, 6, 7, 8
+            //// Output 3, 2, 1, 6, 5, 4, 8, 7
+            //var listNew = SingleLinkedList.ReverseGroup(list.head, 3);
+            //SingleLinkedList.Display(listNew);
 
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }
