@@ -93,7 +93,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxWaterContainerCanHold", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "String", "String", "{190285A9-F05A-4AA5-8933-6198CB3EF1C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestPalindromicSubstring", "LongestPalindromicSubstring\LongestPalindromicSubstring.csproj", "{E75BC819-951F-46DB-AB96-5EF6789048E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestPalindromicSubstring", "LongestPalindromicSubstring\LongestPalindromicSubstring.csproj", "{E75BC819-951F-46DB-AB96-5EF6789048E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrappingMaximumRainWater", "TrappingMaximumRainWater\TrappingMaximumRainWater.csproj", "{DEBA3340-C536-4D28-8FA1-033186334AC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -265,6 +267,10 @@ Global
 		{E75BC819-951F-46DB-AB96-5EF6789048E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E75BC819-951F-46DB-AB96-5EF6789048E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E75BC819-951F-46DB-AB96-5EF6789048E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEBA3340-C536-4D28-8FA1-033186334AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBA3340-C536-4D28-8FA1-033186334AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBA3340-C536-4D28-8FA1-033186334AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBA3340-C536-4D28-8FA1-033186334AC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,6 +294,7 @@ Global
 		{94DF6B5B-7F7D-4E7E-9DE4-4EC5692CE590} = {12B03C23-5332-469F-AF97-1E9CDC2536AB}
 		{3EB781ED-D978-4A02-98F2-7A29C429CA80} = {92D4D2E9-A825-4CB1-894D-C3479363752E}
 		{E75BC819-951F-46DB-AB96-5EF6789048E8} = {190285A9-F05A-4AA5-8933-6198CB3EF1C1}
+		{DEBA3340-C536-4D28-8FA1-033186334AC3} = {190285A9-F05A-4AA5-8933-6198CB3EF1C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EBD0303-0E11-4A3E-B8E3-741CF711E1B6}

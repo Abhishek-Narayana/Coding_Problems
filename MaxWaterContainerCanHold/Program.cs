@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace MaxWaterContainerCanHold
 {
@@ -8,33 +7,34 @@ namespace MaxWaterContainerCanHold
         static void Main(string[] args)
         {
             // https://www.interviewbit.com/problems/container-with-most-water/
+            // https://leetcode.com/problems/container-with-most-water/
             Program program = new Program();
-            List<int> container = new List<int>(){ 1, 3, 7, 2, 7, 3, 1 };
+            int[] container = new int[]{ 1, 3, 7, 2, 7, 3, 1 };
             Console.WriteLine(program.maxArea(container));
             Console.ReadLine();
         }
 
-        public int maxArea(List<int> container)
+        public int maxArea(int[] height)
         {
-            if (container.Count < 2)
+            if (height.Length < 2)
                 return 0;
-            else if (container.Count == 2)
-                return Math.Min(container[0], container[1]);
+            else if (height.Length == 2)
+                return Math.Min(height[0], height[1]);
 
-            int start = 0, end = container.Count - 1;
-            int maxWater = Math.Min(container[start], container[end]) * (end - start);
+            int start = 0, end = height.Length - 1;
+            int maxWater = Math.Min(height[start], height[end]) * (end - start);
             while ((end - start) != 1)
             {
-                if (TryIncreasingCapacity(container, start + 1, end, ref maxWater))
+                if (TryIncreasingCapacity(height, start + 1, end, ref maxWater))
                     start++;
-                if (TryIncreasingCapacity(container, start, end - 1, ref maxWater))
+                if (TryIncreasingCapacity(height, start, end - 1, ref maxWater))
                     end--;
-                int _ = container[start] < container[end] ? start++ : end--;
+                int _ = height[start] < height[end] ? start++ : end--;
             }
             return maxWater;
         }
 
-        private static bool TryIncreasingCapacity(List<int> container, int start, int end, ref int curMax)
+        private static bool TryIncreasingCapacity(int[] container, int start, int end, ref int curMax)
         {
             int result = Math.Min(container[start], container[end]) * (end - start);
             if (result > curMax)
