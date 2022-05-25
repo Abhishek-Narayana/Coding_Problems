@@ -97,7 +97,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestPalindromicSubstring
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrappingMaximumRainWater", "TrappingMaximumRainWater\TrappingMaximumRainWater.csproj", "{DEBA3340-C536-4D28-8FA1-033186334AC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsStringRotation", "IsStringRotation\IsStringRotation.csproj", "{7704110E-72CE-47D4-863B-01E753844EDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsStringRotation", "IsStringRotation\IsStringRotation.csproj", "{7704110E-72CE-47D4-863B-01E753844EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumCharNeedToBeInsertedToMakeItPalindrome", "MinimumCharNeedToBeInsertedToMakeItPalindrome\MinimumCharNeedToBeInsertedToMakeItPalindrome.csproj", "{B3FAB332-A9B0-48BA-BB12-4919CEEE4280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushAllZeroToTheEnd", "PushAllZeroToTheEnd\PushAllZeroToTheEnd.csproj", "{E8F8E498-842D-4653-BC67-B69F7224F1F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -277,6 +281,14 @@ Global
 		{7704110E-72CE-47D4-863B-01E753844EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7704110E-72CE-47D4-863B-01E753844EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7704110E-72CE-47D4-863B-01E753844EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FAB332-A9B0-48BA-BB12-4919CEEE4280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FAB332-A9B0-48BA-BB12-4919CEEE4280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FAB332-A9B0-48BA-BB12-4919CEEE4280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FAB332-A9B0-48BA-BB12-4919CEEE4280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F8E498-842D-4653-BC67-B69F7224F1F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F8E498-842D-4653-BC67-B69F7224F1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F8E498-842D-4653-BC67-B69F7224F1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F8E498-842D-4653-BC67-B69F7224F1F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +314,8 @@ Global
 		{E75BC819-951F-46DB-AB96-5EF6789048E8} = {190285A9-F05A-4AA5-8933-6198CB3EF1C1}
 		{DEBA3340-C536-4D28-8FA1-033186334AC3} = {190285A9-F05A-4AA5-8933-6198CB3EF1C1}
 		{7704110E-72CE-47D4-863B-01E753844EDA} = {190285A9-F05A-4AA5-8933-6198CB3EF1C1}
+		{B3FAB332-A9B0-48BA-BB12-4919CEEE4280} = {190285A9-F05A-4AA5-8933-6198CB3EF1C1}
+		{E8F8E498-842D-4653-BC67-B69F7224F1F3} = {12B03C23-5332-469F-AF97-1E9CDC2536AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7EBD0303-0E11-4A3E-B8E3-741CF711E1B6}
