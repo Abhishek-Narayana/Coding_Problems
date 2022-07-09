@@ -31,4 +31,20 @@ namespace RomanToDecimal
             return decimalValue;
         }
     }
+
+    public class Base
+    {
+        private Base()
+        {
+            Console.WriteLine("I am base");
+        }
+    }
+
+    public class Derived : Base
+    {
+        public Derived()
+        {
+            Console.WriteLine("I am Derived");
+        }
+    }
 }
